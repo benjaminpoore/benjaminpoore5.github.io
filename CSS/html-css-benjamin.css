@@ -44,9 +44,9 @@ body{
     text-align: left;
     padding: 0%;
     position: relative;
-    left: -1.3em;
     float: left;
-    width: 35%;
+    left: -1.2em;
+    width: 120%;
     list-style: none;
 }
 
@@ -57,24 +57,25 @@ body{
     position: relative;
     top: auto;
     vertical-align: top;
+    bottom: 1em;
     float: left;
-    width: 42%;
+    width: 48%;
     list-style: none;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 #name{
-    padding: 13%;
+    padding: 6%;
     background-color: royalblue;
     border: 2px groove black;
     position: relative;
-    top: -1em;
+    top: auto;
+    bottom: 1em;
     vertical-align: top;
     float: right;
-    width: 56%;
+    width: 48%;
     list-style: none;
-    font-size: 17px;
-    text-align: center;
+    font-size: 13px;
 }
 
 #city-date{
