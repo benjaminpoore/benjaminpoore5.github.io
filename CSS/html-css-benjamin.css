@@ -1,3 +1,4 @@
+@media only screen and (min-width: 0px) {
 * {
     box-sizing: border-box;
 }
@@ -6,6 +7,12 @@
 *:after{
     box-sizing: border-box;
 }
+
+    #logo {
+        max-width: 100%;
+        vertical-align: middle;
+        border: 0;
+    }
 
 body{
     background-color: grey;
@@ -28,7 +35,7 @@ body{
     clear: right;
 }
 
-#page-search{
+#page-search {
     text-align: right;
     padding: 0%;
     background-color: royalblue;
@@ -111,7 +118,7 @@ body{
     line-height: 20px;
 }
 
-#hi{
+#hi-lo{
     padding: 0%;
     background-color: royalblue;
     border: 2px groove black;
@@ -119,30 +126,14 @@ body{
     top: auto;
     vertical-align: top;
     float: right;
-    height: 120px !important;
+    height: 280px !important;
     width: 100px !important;
     text-align: center;
     vertical-align: 0;
     list-style: none;
 }
 
-#lo{
-    padding: 0%;
-    background-color: royalblue;
-    border: 2px groove black;
-    position: relative;
-    top: 6px;
-    vertical-align: bottom;
-    float: right;
-    clear: right;
-    height: 120px !important;
-    width: 100px !important;
-    text-align: center;
-    vertical-align: 0;
-    list-style: none;
-}
-
-#advertisement,#hourly-weather {
+#advertisement {
     background-color: royalblue;
     border: 2px groove black;
     position: static;
@@ -151,5 +142,256 @@ body{
     list-style: none;
     text-align: center;
     vertical-align: top;
+    display: inline-block;
+}
+    #hourly-weather-desktop {
+        display: none;
+    }
+  #hourly-weather {
+        background-color: royalblue;
+        border: 2px groove black;
+        position: static;
+        float: right;
+        width: 100%;
+        list-style: none;
+        text-align: center;
+        vertical-align: top;
+        display: none;
+    }
+
+    /* Sketches */
+    #phone {
+        max-width: 100%;
+        vertical-align: middle;
+        border: 0;
+        display: inline-block;
+    }
+    #tablet {
+        max-width: 100%;
+        vertical-align: middle;
+        border: 0;
+        display: none;
+    }
+    #desktop {
+        max-width: 100%;
+        vertical-align: middle;
+        border: 0;
+        display: none;
+    }
+
+    #current_weather_sunny {
+        display: none;
+    }
+
+    #map {
+        display: none;
+    }
 
 }
+/* Medium (tablet) sized screen*/
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: yellow;
+    }
+
+    #hourly-weather {
+        display: inline-block;
+        background-color: royalblue;
+        border: 2px groove black;
+        position: static;
+        float: left;
+        width: 100%;
+        list-style: none;
+        text-align: center;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    #advertisement{
+        display: inline-block;
+        background-color: royalblue;
+        border: 0px groove black;
+        position: relative;
+        float: right;
+        top: 1em;
+        right: 0em;
+        width: 400px;
+        height: 280px;
+        list-style: none;
+        text-align: center;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    #phone {
+        display: none;
+    }
+    #tablet {
+        width: 350px;
+        height: 180px;
+        vertical-align: middle;
+        border: 0;
+        display: inline-block;
+    }
+
+    #hi-lo{
+        padding: 0%;
+        background-color: royalblue;
+        border: 2px groove black;
+        position: relative;
+        top: auto;
+        left: .75em;
+        vertical-align: top;
+        float: left;
+        height: 280px !important;
+        width: 100px !important;
+        text-align: center;
+        vertical-align: 0;
+        list-style: none;
+    }
+}
+
+
+
+
+/* Large (Desktop) sized screen*/
+@media only screen and (min-width: 1024px) {
+    body {
+        background-color: green;
+    }
+
+    #tablet {
+        display: none;
+    }
+    #desktop {
+        max-width: 100%;
+        vertical-align: middle;
+        border: 0;
+        display: inline-block;
+    }
+
+    #hi-lo{
+        padding: 0%;
+        background-color: royalblue;
+        border: 2px groove black;
+        position: relative;
+        top: auto;
+        left: .75em;
+        vertical-align: top;
+        float: left;
+        height: 280px !important;
+        width: 100px !important;
+        text-align: center;
+        vertical-align: 0;
+        list-style: none;
+        display: inline-block;
+    }
+
+    #hourly-weather-desktop {
+        display: inline-block;
+        background-color: royalblue;
+        border: 2px groove black;
+        position: relative;
+        float: left;
+        top: 1em;
+        left: 1.5em;
+        width: 700px;
+        height: 280px;
+        list-style: none;
+        text-align: center;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    #hourly-weather {
+        display: none;
+    }
+
+    #advertisement {
+    float: right;
+    right: -.5em;
+    top: 19.5em;
+    position: relative;
+    width: 580px;
+    height: 280px;
+    list-style: none;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+}
+
+    #current_weather_sunny {
+        position: relative;
+        bottom: left;
+        float: left;
+        top: 1em;
+        left: -7.3em;
+        height: 474px !important;
+        width: 958px !important;
+        border: 0;
+        display: inline-block;
+    }
+
+    #map {
+        background-color: royalblue;
+        border: 2px groove black;
+        position: relative;
+        top: 1em;
+        right: 35.75em;
+        bottom: right;
+        float: right;
+        height: 180px;
+        width: 10px;
+        border: 0;
+        display: inline-block;
+
+    }
+
+    #map_pic {
+        width: 580px;
+        height: 280px;
+    }
+
+    #city-date{
+        padding: 0%;
+        background-color: royalblue;
+        border: 2px groove black;
+        position: static;
+        float: left;
+        width: 100%;
+        list-style: none;
+        text-align: center;
+    }
+
+    #menu {
+        padding: 4.1%;
+        background-color: royalblue;
+        border: 2px groove black;
+        position: relative;
+        top: -0.5em;
+        bottom: auto;
+        vertical-align: bottom;
+        float: left;
+        width: 48%;
+        list-style: none;
+        font-size: 20pt;
+    }
+    #name {
+        padding: 5.3%;
+        background-color: royalblue;
+        border: 2px groove black;
+        position: relative;
+        top: auto;
+        bottom: 1em;
+        vertical-align: top;
+        float: right;
+        width: 51%;
+        list-style: none;
+        font-size: 12px;
+    }
+    #name_desktop{
+        font-size: 20pt;
+    }
+
+}
+
