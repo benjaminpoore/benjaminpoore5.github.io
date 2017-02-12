@@ -187,6 +187,7 @@ body{
         display: none;
     }
 
+
 }
 /* Medium (tablet) sized screen*/
 @media only screen and (min-width: 600px) {
@@ -249,6 +250,35 @@ body{
         vertical-align: 0;
         list-style: none;
     }
+}
+
+#menu {
+    padding: 4.1%;
+    background-color: royalblue;
+    border: 2px groove black;
+    position: relative;
+    top: -0.5em;
+    bottom: auto;
+    vertical-align: bottom;
+    float: left;
+    width: 48%;
+    list-style: none;
+    font-size: 20pt;
+}
+#name {
+    padding: 5.3%;
+    background-color: royalblue;
+    border: 2px groove black;
+    position: relative;
+    top: auto;
+    bottom: 1em;
+    vertical-align: top;
+    float: right;
+    width: 51%;
+    list-style: none;
+}
+#name_desktop{
+    font-size: 25pt;
 }
 
 
