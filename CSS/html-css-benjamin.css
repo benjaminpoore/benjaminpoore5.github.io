@@ -43,6 +43,10 @@
         justify-content: center;
     }
 
+    #advertisement_desktop {
+        display: none;
+    }
+
 body{
     background-color: grey;
     margin: 1%;
@@ -71,7 +75,7 @@ body{
         justify-content: center;
     }
 
-    #current {
+    #current_div {
         margin: .5%;
         background-color: royalblue;
         border: 2px groove black;
@@ -88,6 +92,9 @@ body{
         flex-wrap: wrap;
 
         flex-direction: column;
+    }
+    #current {
+        list-style: none;
     }
     #hi-lo{
         list-style: none;
@@ -179,7 +186,8 @@ body{
         vertical-align: top;
         display: inline-block;
     }
-    #current {
+
+    #current_div {
         margin: .5%;
         background-color: royalblue;
         border: 2px groove black;
@@ -206,18 +214,24 @@ body{
         display: none;
     }
 
+    #phone2 {
+        display: none;
+    }
+
     #phone {
         display: none;
     }
-    #tablet {
+
+    #desktop2 {
+        display: none;
+    }
+    #tablet2 {
         width: auto;
         height: 180px;
         vertical-align: middle;
         border: 0;
         display: inline-block;
     }
-
-
 }
 
 #menu,#name {
@@ -235,10 +249,16 @@ body{
         background-color: green;
     }
 
+    #phone1 {
+        display: none;
+    }
+    #tablet1 {
+        display: none;
+    }
     #tablet {
         display: none;
     }
-    #desktop {
+    #desktop1 {
         max-width: 100%;
         vertical-align: middle;
         border: 0;
@@ -258,7 +278,7 @@ body{
         display: none;
     }
 
-    #current {
+    #current_div {
         margin: .5%;
         background-color: royalblue;
         border: 2px groove black;
@@ -281,13 +301,10 @@ body{
         display: block;
     }
 
-
-
     #map_pic {
         margin: 1%;
         width: 480px;
     }
-
 
     #name_desktop{
         font-size: 20pt;
@@ -306,50 +323,30 @@ body{
         flex-direction: row;
         border:2px solid;
         height: 330px;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
+        align-items: stretch;
     }
     #hourly-weather-desktop {
         margin: .5%;
+        width: 400px;
         display: inline-block;
         order: 2;
     }
 
     #current_weather_sunny {
         margin: .5%;
-     display: inline-block;
-    width: 300px;
+        display: inline-block;
+        width: 280px;
         order: 1;
+    }
+    #current_weather_sunny1 {
+        width: 280px;
     }
     #advertisement_desktop {
         margin: .5%;
         display: block;
-        width: 300px;
+        width: 270px;
         order: 3;
     }
-
-    /*
-    #current_weather_sunny {
-        display: flex;
-        left: 20em;
-        width: 200px;
-        height: 200px;
-        float: left;
-    }
-
-    #hourly-weather-desktop {
-        margin: .5%;
-        background-color: royalblue;
-        border: 2px groove black;
-        font-size: 12pt;
-        display: inherit;
-        width: 600px;
-    }
-
-    #advertisement_desktop {
-        display: inherit;
-        width: 200px;
-        height: 200px;
-    }
-}
-
